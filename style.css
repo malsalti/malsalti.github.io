@@ -1,0 +1,315 @@
+/*
+  Academic homepage stylesheet
+  Change the colors below to adjust the site's appearance.
+*/
+:root {
+  --background: #ffffff;
+  --text: #20272b;
+  --muted: #66747b;
+  --accent: #36758a;
+  --accent-light: #eef5f7;
+  --border: #dce6e9;
+  --sidebar-width: 205px;
+  --content-width: 940px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover,
+a:focus-visible {
+  color: #204f60;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) minmax(0, var(--content-width));
+  gap: 38px;
+  width: min(100% - 40px, calc(var(--sidebar-width) + var(--content-width) + 38px));
+  margin: 0 auto;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  min-height: 100vh;
+  padding: 48px 0;
+  border-right: 1px solid var(--border);
+}
+
+.site-name {
+  display: block;
+  margin: 0 24px 24px 0;
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.sidebar nav,
+.sidebar-group {
+  display: grid;
+  gap: 4px;
+  margin-right: 24px;
+}
+
+.sidebar nav a,
+.sidebar-group a {
+  padding: 5px 8px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a:focus-visible,
+.sidebar nav .current,
+.sidebar-group a:hover,
+.sidebar-group a:focus-visible {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+.sidebar-group {
+  margin-top: 34px;
+}
+
+.sidebar-heading {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.content {
+  min-width: 0;
+  padding: 48px 0 32px;
+}
+
+.page-header {
+  max-width: 800px;
+  margin-bottom: 42px;
+}
+
+.page-header h1 {
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: var(--muted);
+}
+
+.publications-page section {
+  max-width: 860px;
+}
+
+.introduction {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 34px;
+  align-items: end;
+  margin-bottom: 50px;
+}
+
+.portrait-placeholder,
+.portrait-placeholder img {
+  width: 260px;
+  height: 300px;
+  border-radius: 2px;
+}
+
+.portrait-placeholder {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--accent-light);
+  color: var(--muted);
+}
+
+.portrait-placeholder img {
+  display: block;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3 {
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  line-height: 1.25;
+}
+
+h1 {
+  margin: 0 0 5px;
+  font-size: clamp(1.8rem, 4vw, 2.45rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.role {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.identity p:last-child {
+  margin-bottom: 0;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 0 42px;
+  scroll-margin-top: 24px;
+}
+
+h2 {
+  margin: 0 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p,
+ul,
+ol {
+  margin-top: 0;
+}
+
+.publications {
+  padding-left: 1.4rem;
+}
+
+.publications li {
+  margin-bottom: 16px;
+  padding-left: 7px;
+}
+
+.more-link {
+  font-weight: 600;
+}
+
+h3 {
+  margin: 26px 0 12px;
+  font-size: 1rem;
+}
+
+.timeline {
+  margin: 0;
+}
+
+.timeline > div {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.timeline dt {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.timeline dd {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+footer {
+  margin-top: 60px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* Tablet and phone layout */
+@media (max-width: 760px) {
+  .page {
+    display: block;
+    width: min(100% - 32px, 660px);
+  }
+
+  .sidebar {
+    position: static;
+    min-height: auto;
+    padding: 26px 0 20px;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .site-name {
+    margin-bottom: 14px;
+  }
+
+  .sidebar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px 8px;
+    margin-right: 0;
+  }
+
+  .sidebar-group {
+    display: none;
+  }
+
+  .content {
+    padding-top: 32px;
+  }
+
+  .introduction {
+    grid-template-columns: 170px 1fr;
+    gap: 24px;
+  }
+
+  .portrait-placeholder,
+  .portrait-placeholder img {
+    width: 170px;
+    height: 205px;
+  }
+}
+
+@media (max-width: 520px) {
+  .introduction {
+    display: block;
+  }
+
+  .portrait-placeholder {
+    margin-bottom: 24px;
+  }
+
+  .timeline > div {
+    display: block;
+  }
+
+  .timeline dt {
+    margin-bottom: 2px;
+  }
+}
