@@ -1,0 +1,7 @@
+# Internal project notes and temporary files
+WORK_LOG.md
+tmp/
+
+# Operating-system metadata
+Thumbs.db
+.DS_Store
