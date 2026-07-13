@@ -213,6 +213,22 @@ ol {
   font-weight: 600;
 }
 
+.news-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 18px;
+  margin-bottom: 14px;
+}
+
+.news-item time {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.news-item p {
+  margin-bottom: 0;
+}
+
 h3 {
   margin: 26px 0 12px;
   font-size: 1rem;
@@ -236,6 +252,10 @@ h3 {
 
 .timeline dd {
   margin: 0;
+}
+
+.detail {
+  color: var(--muted);
 }
 
 address {
@@ -307,6 +327,15 @@ footer {
 
   .timeline > div {
     display: block;
+  }
+
+  .news-item {
+    display: block;
+  }
+
+  .news-item time {
+    display: block;
+    margin-bottom: 3px;
   }
 
   .timeline dt {
