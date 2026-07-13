@@ -127,6 +127,59 @@ a:focus-visible {
   max-width: 860px;
 }
 
+.research-page .page-header {
+  max-width: 800px;
+}
+
+.research-area {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 275px;
+  gap: 30px;
+  align-items: start;
+  max-width: 900px;
+  margin-bottom: 54px;
+}
+
+.research-figure {
+  width: 100%;
+  margin: 42px 0 0;
+}
+
+.research-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.research-copy > p:not(.research-label) {
+  font-size: 0.94rem;
+}
+
+.research-question {
+  margin-bottom: 14px;
+  color: var(--accent);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.research-label {
+  margin: 22px 0 6px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.research-links {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+}
+
+.research-links li {
+  margin-bottom: 5px;
+}
+
 .introduction {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -307,6 +360,15 @@ footer {
   .introduction {
     grid-template-columns: 170px 1fr;
     gap: 24px;
+  }
+
+  .research-area {
+    display: block;
+  }
+
+  .research-figure {
+    max-width: 360px;
+    margin: 24px auto 0;
   }
 
   .portrait-placeholder,

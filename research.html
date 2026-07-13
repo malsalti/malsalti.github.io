@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research themes of Dr.-Ing. Mohammad Alsalti">
+  <title>Research | Mohammad Alsalti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      <a class="site-name" href="index.html">Mohammad Alsalti</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="news.html">News</a><a class="current" href="research.html">Research</a>
+        <a href="publications.html">Publications</a><a href="teaching.html">Teaching</a>
+        <a href="service.html">Service</a><a href="cv.html">CV</a><a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="sidebar-group">
+        <p class="sidebar-heading">Academic profiles</p>
+        <a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=Eq-fD5sAAAAJ&amp;hl=en">Google Scholar</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0000-0003-4728-3477">ORCID</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.irt.uni-hannover.de/en/alsalti">Institutional profile</a>
+      </div>
+    </aside>
+
+    <main class="content research-page">
+      <header class="page-header">
+        <h1>Research</h1>
+        <p>
+          My research develops data- and learning-based methods for analyzing
+          and controlling dynamical systems, with an emphasis on rigorous
+          guarantees, efficient algorithms, and applications where reliable
+          models or complete measurements are difficult to obtain.
+        </p>
+      </header>
+
+      <article class="research-area">
+        <div class="research-copy">
+          <h2>Data-based representations and output-feedback control</h2>
+          <p class="research-question">
+            How can we represent, analyze, and control a dynamical system using
+            only short, noisy, and potentially irregularly measured input–output data?
+          </p>
+          <p>
+            <strong>Why it matters.</strong> A mathematical model is not always
+            available, and collecting long, perfectly sampled datasets may be
+            expensive or simply impossible. Working directly with measured data
+            can make analysis and controller design possible when conventional
+            model-based methods are difficult to use.
+          </p>
+          <p>
+            <strong>My work.</strong> I develop data-based representations that
+            capture the behavior of linear systems from limited input–output
+            measurements. My contributions also address missing samples, the
+            design of sufficiently informative experiments, and output-feedback
+            control of multivariable systems directly from data.
+          </p>
+          <p class="research-label">Representative work</p>
+          <ul class="research-links">
+            <li><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1109/TAC.2024.3423053">System representations from irregularly measured data</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1109/TAC.2025.3553073">Data-driven output-feedback control of linear MIMO systems</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1109/LCSYS.2023.3287133">Design of persistently exciting inputs</a></li>
+          </ul>
+        </div>
+        <figure class="research-figure">
+          <img src="images/research/lti-behavioral-representation.svg" width="1200" height="1000" loading="lazy" decoding="async" alt="An input-output system producing incomplete data strings used for non-parametric representations and data-based control">
+        </figure>
+      </article>
+
+      <article class="research-area">
+        <div class="research-copy">
+          <h2>Data-driven control of nonlinear systems</h2>
+          <p class="research-question">
+            How can we analyze and control a nonlinear system directly from data
+            when its equations are unknown or too complicated to model accurately?
+          </p>
+          <p>
+            <strong>Why it matters.</strong> Nonlinear behavior appears in many
+            physical and engineered systems, but most data-driven methods are
+            easier to develop for linear systems. Extending reliable methods to
+            nonlinear dynamics allows us to address a much broader range of
+            practical control problems.
+          </p>
+          <p>
+            <strong>My work.</strong> I developed data-based representations and
+            controllers for important classes of nonlinear systems, including
+            flat and feedback-linearizable systems. This work covers simulation,
+            output matching, predictive control, and stabilization methods that
+            account for noisy data and help estimate the region in which the
+            controller can stabilize the system.
+          </p>
+          <p class="research-label">Representative work</p>
+          <ul class="research-links">
+            <li><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1109/TAC.2023.3249289">Data-based control of feedback-linearizable systems</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.ifacol.2023.10.1636">Data-driven nonlinear predictive control</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2511.01457">Nonlinear stabilization via descriptor embedding</a></li>
+          </ul>
+        </div>
+        <figure class="research-figure">
+          <img src="images/research/nonlinear-descriptor-embedding.svg" width="1200" height="620" loading="lazy" decoding="async" alt="A nonlinear state transition from x t to x t plus one mapped by Z into embedded coordinates">
+        </figure>
+      </article>
+
+      <article class="research-area">
+        <div class="research-copy">
+          <h2>Predictive and learning-based control</h2>
+          <p class="research-question">
+            How can a controller use previously collected data to predict future
+            behavior and learn good control actions without requiring large
+            datasets or expensive online computation?
+          </p>
+          <p>
+            <strong>Why it matters.</strong> Predictive control and reinforcement
+            learning can choose control actions by looking ahead or learning from
+            experience, but many methods require large amounts of data and
+            computation. Reducing these requirements is important when experiments
+            are costly or control decisions must be made in real time.
+          </p>
+          <p>
+            <strong>My work.</strong> I developed robust data-driven predictive
+            control methods that work with short, noisy, and potentially irregular
+            data while providing closed-loop guarantees. I also worked on efficient
+            off-policy Q-learning methods that learn optimal output-feedback
+            policies from a single offline input–output experiment, without a
+            mathematical model or state measurements.
+          </p>
+          <p class="research-label">Representative work</p>
+          <ul class="research-links">
+            <li><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.automatica.2026.113108">Robust and efficient data-driven predictive control</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://proceedings.mlr.press/v242/alsalti24a.html">Efficient data-based Q-learning for output-feedback control</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1109/TAC.2023.3235967">Off-policy Q-learning for discrete-time LQR</a></li>
+          </ul>
+        </div>
+        <figure class="research-figure">
+          <img src="images/research/predictive-learning-matlab-v2.png" width="1200" height="1200" loading="lazy" decoding="async" alt="Candidate output predictions and a selected constrained predictive-control trajectory">
+        </figure>
+      </article>
+
+      <article class="research-area">
+        <div class="research-copy">
+          <h2>Biomedical control applications</h2>
+          <p class="research-question">
+            How can feedback control help determine the right fluid infusion rate
+            for an individual patient?
+          </p>
+          <p>
+            <strong>Why it matters.</strong> Patients can respond differently to
+            the same treatment, and their condition may change over time. A
+            closed-loop system can use physiological measurements such as blood
+            pressure to adjust the infusion rate according to the patient's response.
+          </p>
+          <p>
+            <strong>My work.</strong> I developed and evaluated closed-loop
+            algorithms for automated fluid resuscitation in simulation. My recent
+            work explores a data-driven predictive controller that personalizes
+            fluid delivery without first identifying a patient-specific model,
+            evaluated on 100 virtual patients.
+          </p>
+          <p class="research-label">Representative work</p>
+          <ul class="research-links">
+            <li><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.18416/AUTOMED.2026.2459">Data-driven patient-specific fluid resuscitation</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1115/1.4052312">Closed-loop hemorrhage resuscitation using blood-pressure feedback</a></li>
+          </ul>
+        </div>
+        <figure class="research-figure">
+          <img src="images/research/biomedical-control-matlab-v2.png" width="1200" height="1200" loading="lazy" decoding="async" alt="Closed-loop mean arterial pressure responses for a cohort of virtual patients approaching a target range">
+        </figure>
+      </article>
+
+      <footer><p>Last updated: July 2026</p></footer>
+    </main>
+  </div>
+</body>
+</html>
