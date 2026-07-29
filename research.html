@@ -12,15 +12,14 @@
     <aside class="sidebar">
       <a class="site-name" href="index.html">Mohammad Alsalti</a>
       <nav aria-label="Main navigation">
-        <a href="index.html">Home</a><a href="news.html">News</a><a class="current" href="research.html">Research</a>
+        <a href="index.html">Home</a><a class="current" href="research.html">Research</a>
         <a href="publications.html">Publications</a><a href="teaching.html">Teaching</a>
-        <a href="service.html">Service</a><a href="cv.html">CV</a><a href="index.html#contact">Contact</a>
+        <a href="service.html">Service</a><a href="cv.html">CV</a>
       </nav>
       <div class="sidebar-group">
         <p class="sidebar-heading">Academic profiles</p>
         <a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=Eq-fD5sAAAAJ&amp;hl=en">Google Scholar</a>
         <a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0000-0003-4728-3477">ORCID</a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.irt.uni-hannover.de/en/alsalti">Institutional profile</a>
       </div>
     </aside>
 
@@ -35,13 +34,18 @@
         </p>
       </header>
 
-      <article class="research-area">
-        <div class="research-copy">
-          <h2>Data-based representations and output-feedback control</h2>
-          <p class="research-question">
-            How can we represent, analyze, and control a dynamical system using
-            only short, noisy, and potentially irregularly measured input–output data?
-          </p>
+      <details class="research-disclosure">
+        <summary>
+          <h2>
+            <span class="research-topic-title">Data-based representations and output-feedback control</span>
+            <span class="research-summary-question">
+              How can we represent, analyze, and control a dynamical system using
+              only short, noisy, and potentially irregularly measured input–output data?
+            </span>
+          </h2>
+        </summary>
+        <div class="research-area">
+          <div class="research-copy">
           <p>
             <strong>Why it matters.</strong> A mathematical model is not always
             available, and collecting long, perfectly sampled datasets may be
@@ -62,19 +66,25 @@
             <li><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1109/TAC.2025.3553073">Data-driven output-feedback control of linear MIMO systems</a></li>
             <li><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1109/LCSYS.2023.3287133">Design of persistently exciting inputs</a></li>
           </ul>
+          </div>
+          <figure class="research-figure">
+            <img src="images/research/lti-behavioral-representation.svg" width="1200" height="1000" loading="lazy" decoding="async" alt="An input-output system producing incomplete data strings used for non-parametric representations and data-based control">
+          </figure>
         </div>
-        <figure class="research-figure">
-          <img src="images/research/lti-behavioral-representation.svg" width="1200" height="1000" loading="lazy" decoding="async" alt="An input-output system producing incomplete data strings used for non-parametric representations and data-based control">
-        </figure>
-      </article>
+      </details>
 
-      <article class="research-area">
-        <div class="research-copy">
-          <h2>Data-driven control of nonlinear systems</h2>
-          <p class="research-question">
-            How can we analyze and control a nonlinear system directly from data
-            when its equations are unknown or too complicated to model accurately?
-          </p>
+      <details class="research-disclosure">
+        <summary>
+          <h2>
+            <span class="research-topic-title">Data-driven control of nonlinear systems</span>
+            <span class="research-summary-question">
+              How can we analyze and control a nonlinear system directly from data
+              when its equations are unknown or too complicated to model accurately?
+            </span>
+          </h2>
+        </summary>
+        <div class="research-area">
+          <div class="research-copy">
           <p>
             <strong>Why it matters.</strong> Nonlinear behavior appears in many
             physical and engineered systems, but most data-driven methods are
@@ -97,20 +107,26 @@
             <li><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.ifacol.2023.10.1636">Data-driven nonlinear predictive control</a></li>
             <li><a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2511.01457">Nonlinear stabilization via descriptor embedding</a></li>
           </ul>
+          </div>
+          <figure class="research-figure">
+            <img src="images/research/nonlinear-descriptor-embedding.svg" width="1200" height="620" loading="lazy" decoding="async" alt="A nonlinear state transition from x t to x t plus one mapped by Z into embedded coordinates">
+          </figure>
         </div>
-        <figure class="research-figure">
-          <img src="images/research/nonlinear-descriptor-embedding.svg" width="1200" height="620" loading="lazy" decoding="async" alt="A nonlinear state transition from x t to x t plus one mapped by Z into embedded coordinates">
-        </figure>
-      </article>
+      </details>
 
-      <article class="research-area">
-        <div class="research-copy">
-          <h2>Predictive and learning-based control</h2>
-          <p class="research-question">
-            How can a controller use previously collected data to predict future
-            behavior and learn good control actions without requiring large
-            datasets or expensive online computation?
-          </p>
+      <details class="research-disclosure">
+        <summary>
+          <h2>
+            <span class="research-topic-title">Predictive and learning-based control</span>
+            <span class="research-summary-question">
+              How can a controller use previously collected data to predict future
+              behavior and learn good control actions without requiring large
+              datasets or expensive online computation?
+            </span>
+          </h2>
+        </summary>
+        <div class="research-area">
+          <div class="research-copy">
           <p>
             <strong>Why it matters.</strong> Predictive control and reinforcement
             learning can choose control actions by looking ahead or learning from
@@ -132,19 +148,25 @@
             <li><a target="_blank" rel="noopener noreferrer" href="https://proceedings.mlr.press/v242/alsalti24a.html">Efficient data-based Q-learning for output-feedback control</a></li>
             <li><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1109/TAC.2023.3235967">Off-policy Q-learning for discrete-time LQR</a></li>
           </ul>
+          </div>
+          <figure class="research-figure">
+            <img src="images/research/predictive-learning-matlab-v2.png" width="1200" height="1200" loading="lazy" decoding="async" alt="Candidate output predictions and a selected constrained predictive-control trajectory">
+          </figure>
         </div>
-        <figure class="research-figure">
-          <img src="images/research/predictive-learning-matlab-v2.png" width="1200" height="1200" loading="lazy" decoding="async" alt="Candidate output predictions and a selected constrained predictive-control trajectory">
-        </figure>
-      </article>
+      </details>
 
-      <article class="research-area">
-        <div class="research-copy">
-          <h2>Biomedical control applications</h2>
-          <p class="research-question">
-            How can feedback control help determine the right fluid infusion rate
-            for an individual patient?
-          </p>
+      <details class="research-disclosure">
+        <summary>
+          <h2>
+            <span class="research-topic-title">Biomedical control applications</span>
+            <span class="research-summary-question">
+              How can feedback control help determine the right fluid infusion rate
+              for an individual patient?
+            </span>
+          </h2>
+        </summary>
+        <div class="research-area">
+          <div class="research-copy">
           <p>
             <strong>Why it matters.</strong> Patients can respond differently to
             the same treatment, and their condition may change over time. A
@@ -163,11 +185,12 @@
             <li><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.18416/AUTOMED.2026.2459">Data-driven patient-specific fluid resuscitation</a></li>
             <li><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1115/1.4052312">Closed-loop hemorrhage resuscitation using blood-pressure feedback</a></li>
           </ul>
+          </div>
+          <figure class="research-figure">
+            <img src="images/research/biomedical-control-matlab-v2.png" width="1200" height="1200" loading="lazy" decoding="async" alt="Closed-loop mean arterial pressure responses for a cohort of virtual patients approaching a target range">
+          </figure>
         </div>
-        <figure class="research-figure">
-          <img src="images/research/biomedical-control-matlab-v2.png" width="1200" height="1200" loading="lazy" decoding="async" alt="Closed-loop mean arterial pressure responses for a cohort of virtual patients approaching a target range">
-        </figure>
-      </article>
+      </details>
 
       <footer><p>Last updated: July 2026</p></footer>
     </main>

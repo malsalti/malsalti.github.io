@@ -127,6 +127,12 @@ a:focus-visible {
   max-width: 900px;
 }
 
+@media (min-width: 1224px) {
+  .publications-page {
+    width: min(1120px, calc(50vw + 328px));
+  }
+}
+
 .publications-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 288px;
@@ -161,6 +167,94 @@ a:focus-visible {
   margin-bottom: 54px;
 }
 
+.research-disclosure {
+  max-width: 900px;
+  margin: 0;
+  border-top: 1px solid var(--border);
+}
+
+.research-disclosure:last-of-type {
+  border-bottom: 1px solid var(--border);
+}
+
+.research-disclosure > summary {
+  position: relative;
+  padding: 20px 50px 20px 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.research-disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+
+.research-disclosure > summary::after {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent-light);
+  color: var(--accent);
+  content: "+";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.research-disclosure[open] > summary::after {
+  content: "–";
+}
+
+.research-disclosure > summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.research-disclosure > summary h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.research-topic-title {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--text);
+  font-size: 1.08rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.research-summary-question {
+  display: block;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.research-disclosure > summary:hover .research-summary-question {
+  color: #204f60;
+}
+
+.research-disclosure[open] > summary {
+  border-bottom: 1px solid var(--border);
+}
+
+.research-disclosure .research-area {
+  margin: 0;
+  padding: 26px 0 34px;
+}
+
+.research-disclosure .research-figure {
+  margin-top: 0;
+}
+
 .research-figure {
   width: 100%;
   margin: 42px 0 0;
@@ -174,13 +268,6 @@ a:focus-visible {
 
 .research-copy > p:not(.research-label) {
   font-size: 0.94rem;
-}
-
-.research-question {
-  margin-bottom: 14px;
-  color: var(--accent);
-  font-weight: 600;
-  line-height: 1.5;
 }
 
 .research-label {
@@ -252,6 +339,10 @@ h1 {
 
 .identity p:last-child {
   margin-bottom: 0;
+}
+
+.identity-contact {
+  line-height: 1.65;
 }
 
 .citation-widget {
@@ -417,6 +508,10 @@ ol {
   padding-left: 1.4rem;
 }
 
+.publications-page .publications {
+  font-size: 0.94rem;
+}
+
 .publications li {
   margin-bottom: 16px;
   padding-left: 7px;
@@ -439,6 +534,88 @@ ol {
 }
 
 .news-item p {
+  margin-bottom: 0;
+}
+
+.news-disclosure {
+  max-width: 800px;
+  margin: 0;
+  border-top: 1px solid var(--border);
+}
+
+.news-disclosure:last-of-type {
+  border-bottom: 1px solid var(--border);
+}
+
+.news-disclosure > summary {
+  position: relative;
+  padding: 18px 50px 18px 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.news-disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+
+.news-disclosure > summary::after {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent-light);
+  color: var(--accent);
+  content: "+";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.news-disclosure[open] > summary::after {
+  content: "–";
+}
+
+.news-disclosure > summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.news-disclosure > summary h2,
+.news-disclosure > summary h3 {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.news-year {
+  color: var(--text);
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+
+.news-count {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.news-disclosure[open] > summary {
+  border-bottom: 1px solid var(--border);
+}
+
+.news-year-content {
+  padding: 22px 0 10px;
+}
+
+.news-year-content .news-item:last-child {
   margin-bottom: 0;
 }
 
@@ -526,9 +703,21 @@ footer {
     display: block;
   }
 
+  .research-disclosure > summary {
+    padding: 17px 44px 17px 0;
+  }
+
+  .research-disclosure .research-area {
+    padding-top: 22px;
+  }
+
   .research-figure {
     max-width: 360px;
     margin: 24px auto 0;
+  }
+
+  .research-disclosure .research-figure {
+    margin-top: 24px;
   }
 
   .portrait-placeholder,
