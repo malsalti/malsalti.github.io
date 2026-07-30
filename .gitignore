@@ -2,6 +2,9 @@
 WORK_LOG.md
 tmp/
 
+# Unpublished course materials
+teaching/linear-systems-theory/
+
 # Operating-system metadata
 Thumbs.db
 .DS_Store
