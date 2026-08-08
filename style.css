@@ -741,7 +741,7 @@ h1 {
 
 .citation-bars {
   display: grid;
-  grid-template-columns: repeat(7, minmax(28px, 1fr));
+  grid-template-columns: repeat(6, minmax(28px, 1fr));
   gap: 7px;
   height: 174px;
   padding: 20px 4px 0;
