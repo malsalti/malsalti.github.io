@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-labelledby="title description">
+  <title id="title">Irregular input-output data for representations and control</title>
+  <desc id="description">An input-output system produces several incomplete data strings that support non-parametric representations and data-based control.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="24" markerHeight="24" refX="20" refY="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L22 12 L1 23 Z" fill="#3d4b52"/>
+    </marker>
+    <linearGradient id="systemFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eff8f9"/>
+      <stop offset="1" stop-color="#d8ecef"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1000" fill="#ffffff"/>
+
+  <g aria-label="Unknown dynamical system">
+    <path d="M105 150 H420" fill="none" stroke="#3d4b52" stroke-width="7" marker-end="url(#arrow)"/>
+    <rect x="430" y="75" width="340" height="150" rx="16" fill="url(#systemFill)" stroke="#28788b" stroke-width="7"/>
+    <path d="M770 150 H1095" fill="none" stroke="#3d4b52" stroke-width="7" marker-end="url(#arrow)"/>
+    <text x="255" y="122" text-anchor="middle" fill="#3d4b52" font-family="Cambria Math, STIX Two Math, serif" font-size="58" font-style="italic">u</text>
+    <text x="939" y="122" text-anchor="middle" fill="#3d4b52" font-family="Cambria Math, STIX Two Math, serif" font-size="58" font-style="italic">y</text>
+    <text x="600" y="178" text-anchor="middle" fill="#21373d" font-family="Cambria Math, STIX Two Math, serif" font-size="92" font-style="italic">Σ</text>
+  </g>
+
+  <g aria-label="Irregularly measured data strings" fill="none" stroke-linecap="round" stroke-width="10" stroke-dasharray="1 19">
+    <path d="M548 235 C520 335 426 420 260 642" stroke="#0072bd"/>
+    <path d="M574 235 C562 342 507 466 426 642" stroke="#4dbeee"/>
+    <path d="M600 235 C600 350 600 482 600 642" stroke="#28788b"/>
+    <path d="M626 235 C640 350 690 470 774 642" stroke="#77ac30"/>
+    <path d="M652 235 C684 332 775 436 942 642" stroke="#d95319"/>
+  </g>
+
+  <g aria-hidden="true" fill="#ffffff">
+    <circle cx="445" cy="425" r="25"/>
+    <circle cx="512" cy="470" r="25"/>
+    <circle cx="600" cy="390" r="25"/>
+    <circle cx="700" cy="495" r="25"/>
+    <circle cx="817" cy="493" r="25"/>
+  </g>
+
+  <text x="600" y="713" text-anchor="middle" fill="#59636a" font-family="Inter, Arial, sans-serif" font-size="45">irregularly measured input–output data</text>
+
+  <g fill="none" stroke="#59636a" stroke-width="6" stroke-linecap="round">
+    <path d="M600 735 V772 M600 772 H340 V808"/>
+    <path d="M600 772 H860 V808"/>
+  </g>
+
+  <g aria-label="Uses of the data">
+    <rect x="130" y="810" width="420" height="130" rx="26" fill="#f7f3e9" stroke="#59636a" stroke-width="5"/>
+    <rect x="650" y="810" width="420" height="130" rx="26" fill="#e7f3f5" stroke="#28788b" stroke-width="5"/>
+    <text x="340" y="857" text-anchor="middle" fill="#2f373b" font-family="Inter, Arial, sans-serif" font-size="52">non-parametric</text>
+    <text x="340" y="915" text-anchor="middle" fill="#2f373b" font-family="Inter, Arial, sans-serif" font-size="52">representations</text>
+    <text x="860" y="857" text-anchor="middle" fill="#21373d" font-family="Inter, Arial, sans-serif" font-size="52">data-based</text>
+    <text x="860" y="915" text-anchor="middle" fill="#21373d" font-family="Inter, Arial, sans-serif" font-size="52">control</text>
+  </g>
+</svg>

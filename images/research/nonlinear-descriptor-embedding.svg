@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title description">
+  <title id="title">Nonlinear descriptor embedding</title>
+  <desc id="description">A transition on a smaller peanut-shaped state space is mapped into a larger embedded space.</desc>
+  <defs>
+    <linearGradient id="stateSurface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf9f3"/>
+      <stop offset="1" stop-color="#eee9dd"/>
+    </linearGradient>
+    <linearGradient id="liftedSurface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eff8f9"/>
+      <stop offset="1" stop-color="#d8ecef"/>
+    </linearGradient>
+    <marker id="stateArrow" markerWidth="22" markerHeight="22" refX="18" refY="11" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L20 11 L1 21 Z" fill="#3d4b52"/>
+    </marker>
+    <marker id="mapArrow" markerWidth="26" markerHeight="26" refX="22" refY="13" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L24 13 L1 25 Z" fill="#28788b"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="620" fill="#ffffff"/>
+
+  <g aria-label="Original nonlinear coordinates">
+    <path d="M35 315 C20 220 85 145 175 155 C235 162 255 212 292 207 C340 201 360 145 420 130 C505 112 545 215 520 310 C495 405 420 452 345 430 C300 417 275 378 240 385 C200 393 170 455 115 460 C35 468 0 390 35 315 Z"
+          fill="url(#stateSurface)" stroke="#59636a" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M112 345 C182 330 270 300 370 252" fill="none" stroke="#3d4b52" stroke-width="8" stroke-linecap="round" marker-end="url(#stateArrow)"/>
+    <circle cx="105" cy="347" r="18" fill="#d95319" stroke="#ffffff" stroke-width="7"/>
+    <circle cx="380" cy="245" r="18" fill="#0072bd" stroke="#ffffff" stroke-width="7"/>
+    <text x="123" y="400" fill="#222a2f" font-family="Cambria Math, STIX Two Math, serif" font-size="54" font-style="italic">x<tspan baseline-shift="sub" font-size="34">t</tspan></text>
+    <text x="300" y="215" fill="#222a2f" font-family="Cambria Math, STIX Two Math, serif" font-size="54" font-style="italic">x<tspan baseline-shift="sub" font-size="33">t+1</tspan></text>
+  </g>
+
+  <g aria-label="Embedding map">
+    <path d="M555 310 C588 276 622 276 655 310" fill="none" stroke="#28788b" stroke-width="11" stroke-linecap="round" marker-end="url(#mapArrow)"/>
+    <text x="605" y="246" text-anchor="middle" fill="#28788b" font-family="Cambria Math, STIX Two Math, serif" font-size="66" font-style="italic">Z</text>
+  </g>
+
+  <g aria-label="Embedded coordinates">
+    <path d="M740 160 C800 65 920 35 1030 72 C1135 108 1180 215 1140 310 C1115 365 1140 410 1095 470 C1030 557 930 590 815 530 C710 475 685 360 720 260 C735 228 722 190 740 160 Z"
+          fill="url(#liftedSurface)" stroke="#28788b" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M797 425 C862 380 935 282 1037 170" fill="none" stroke="#3d4b52" stroke-width="8" stroke-linecap="round" marker-end="url(#stateArrow)"/>
+    <circle cx="790" cy="430" r="18" fill="#d95319" stroke="#ffffff" stroke-width="7"/>
+    <circle cx="1046" cy="161" r="18" fill="#0072bd" stroke="#ffffff" stroke-width="7"/>
+    <text x="820" y="485" fill="#222a2f" font-family="Cambria Math, STIX Two Math, serif" font-size="50" font-style="italic">Z(x<tspan baseline-shift="sub" font-size="32">t</tspan>)</text>
+    <text x="930" y="128" fill="#222a2f" font-family="Cambria Math, STIX Two Math, serif" font-size="48" font-style="italic">Z(x<tspan baseline-shift="sub" font-size="30">t+1</tspan>)</text>
+  </g>
+</svg>
